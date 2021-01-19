@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ирина Самоходкина](https://up.htmlacademy.ru/htmlcss/30/user/1698401).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Котов] (https://htmlacademy.ru/profile/eugene_kotov).
 
 ---
 
