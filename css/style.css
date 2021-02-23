@@ -1,0 +1,154 @@
+/* Variables */
+
+:root {
+    --color-black: #000000;
+    --color-grey: #333333;
+    --color-darkgrey: #666666;
+    --color-brown: #766357;
+    --color-deepbrown: #604E43;
+    --color-activebrown: #503E33;
+    --color-datagrey: #A9A9A9;
+    --color-activegrey: #EBEBEB;
+    --color-bordergrey: #E5E5E5;
+    --color-white: #FFFFFF;
+    --color-lightgrey: #EEEEEE;
+    --color-neutral: #F2F2F2;
+    --color-blue: #81B3D2;
+    --color-deepblue: #669EC0;
+    --color-darkblue: #5496BD;
+    --color-footer: rgba(255, 255, 255, 0.9);
+}
+
+.blue {
+    background-color: var(--color-blue);
+}
+
+.white {
+    background-color: var(--color-white);
+}
+
+.grey {
+    background-color: var(--color-lightgrey);
+}
+
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature-wrap {
+    display: flex;
+}
+
+
+/* Global */
+
+.page {
+    height: 100%;
+}
+
+.page-body {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: var(--color-black);
+    text-transform: uppercase;
+    background-color: var(--color-white);
+    background-image: url("/img/background-photo.jpg");
+    background-position: top center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Main navigation */
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+.main-navigation-wrapper {
+    background-color: var(--color-white);
+}
+
+.site-navigation {
+    list-style: none;
+    color: var(--color-black);
+}
+
+
+/* Features */
+
+.feature-item {
+    text-align: center;
+    list-style: none;
+}
+
+.feature-item h3 {
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.feature-item h4 {
+    font-size: 21px;
+    line-height: 21px;
+}
+
+
+/* Main footer */
+
+.main-footer {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--color-black);
+    background-color: var(--color-footer);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+
+/* Footer contacts */
+
+.footer-contacts a {
+    color: var(--color-black);
+    text-decoration: underline;
+}
+
+
+/* Social button */
+
+.social-button {
+    width: 46px;
+    height: 48px;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+}
+
+.social-button {
+    list-style: none;
+    text-align: center;
+}
+
+
+/* Copyright */
+
+.copyright {
+    text-align: center;
+}
