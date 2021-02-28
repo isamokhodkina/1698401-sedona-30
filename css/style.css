@@ -129,21 +129,23 @@ a:hover {
 .footer-contacts a {
     color: var(--color-black);
     text-decoration: underline;
+    
 }
 
 
 /* Social button */
+
+.footer-social ul {
+    list-style: none
+}
 
 .social-button {
     width: 46px;
     height: 48px;
     color: var(--color-white);
     background-color: var(--color-blue);
-}
-
-.social-button {
-    list-style: none;
-    text-align: center;
+    background-position: center;
+    margin: 0px auto;
 }
 
 

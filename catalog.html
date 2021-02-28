@@ -4,19 +4,21 @@
 <head>
   <meta charset="utf-8">
   <title>Sedona</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="icon.svg" type="img/svg+xml">
   <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
 </head>
 
-<body>
+<body class="page-body inner-page">
 
-  <header>
-    <nav>
+  <header class="main-header">
+    <nav class="main-navigation">
       <a href="index.html">
         <img src="img/logo.png" width="138" height="70" alt="Логотип Sedona">
       </a>
-      <ul>
+      <ul class="site-navigation">
         <li><a href="blank.html">Информация </a></li>
         <li><a href="blank.html">Фото и Видео</a></li>
         <li><a href="blank.html">Карта штата</a> </li>
@@ -24,7 +26,7 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="container">
     <form method="get" action="https://echo.htmlacademy.ru"></form>
 
       <form>
@@ -33,17 +35,17 @@
 
         <fieldset>
           <legend>Инфраструктура:</legend>
-          <section>
+          <section class="filters">
             <ul>
-              <li>
+          <li class="filter-option filter-checkbox">
                 <input type="checkbox" name="pool" id="filter-pool" checked>
                 <label for="filter-pool">Бассейны</label>
               </li>
-              <li>
+          <li class="filter-option filter-checkbox">
                 <input type="checkbox" name="parking" id="filter-parking">
                 <label for="filter-parking">Парковка</label>
               </li>
-              <li>
+          <li class="filter-option filter-checkbox">
                 <input type="checkbox" name="Wi-Fi" id="filter-Wi-Fi">
                 <label for="filter-Wi-Fi">Wi-Fi</label>
               </li>
@@ -52,17 +54,17 @@
         </fieldset>
         <fieldset>
           <legend>Тип Жилья:</legend>
-          <section>
+          <section class="filters">
             <ul>
-              <li>
+              <li class="filter-option filter-checkbox">
                 <input type="checkbox" name="hotel" id="filter-hotel" checked>
                 <label for="filter-hotel">Гостиница</label>
               </li>
-              <li>
+              <li class="filter-option filter-checkbox">
                 <input type="checkbox" name="motel" id="filter-motel" checked>
                 <label for="filter-motel">Мотель</label>
               </li>
-              <li>
+              <li class="filter-option filter-checkbox">
                 <input type="checkbox" name="apartment" id="filter-apartment" checked>
                 <label for="filter-apartment">Апартаменты</label>
               </li>
@@ -76,38 +78,38 @@
             <input type="text" value="От 0">
             <input type="text" value="До 3000">
             <input type="range" min="0" max="3000">
-            <button type="submit">Показать</button>
+            <button type="submit" class="filter-button">Показать</button>
           </section>
         </fieldset>
       </form>
 
-      <div>
+      <div class="result">
         <h2>Результат поиска</h2>
         <p>Найдено:3</p>
         <p>Сортировка:</p>
         <ul>
-          <li>
+          <li class="result-item">
             <a href="#">По цене</a>
           </li>
-          <li>
+          <li class="result-item">
             <a href="#">По типу</a>
           </li>
-          <li>
+          <li class="result-item">
             <a href="#">По рейтингу</a>
           </li>
         </ul>
       </div>
-      <section>
+      <section class="choose-hotel">
         <h2>Выбор отеля</h2>
         <ul>
-          <li>
+          <li class="hotel">
             <h3>Amara Resort & Spa</h3>
             <p>
               <a>
                 <img src="img/Amara-Resort&Spa.jpg" width="135" height="90" ↩ alt="Amara Resort & Spa">
               </a>
             </p>
-            <table>
+            <table class="hotel-benefits">
               <tr>
                 <td>Гостиница</td>
                 <td>От 4000</td>
@@ -124,14 +126,14 @@
             <!-- Здесь будет количество звезд отеля -->
             <p>Рейтинг: 8,5</p>
           </li>
-          <li>
+          <li class="hotel">
             <h3>Desert Quail Inn</h3>
             <p>
               <a>
                 <img src="img/Desert-Quail-Inn.jpg" width="135" height="90" ↩ alt="Desert Quail Inn">
               </a>
             </p>
-            <table>
+            <table class="hotel-benefits">
               <tr>
                 <td>Мотель</td>
                 <td>От 3000</td>
@@ -148,14 +150,14 @@
             <!-- Здесь будет количество звезд отеля -->
             <p>Рейтинг: 8,9</p>
           </li>
-          <li>
+          <li class="hotel">
             <h3>Villas at Poco Diablo</h3>
             <p>
               <a>
                 <img src="img/Villas-at-Poco-Diablo.jpg" width="135" height="90" ↩ alt="Villas at Poco Diablo">
               </a>
             </p>
-            <table>
+            <table class="hotel-benefits">
               <tr>
                 <td>Апартаменты</td>
                 <td>От 2000</td>
@@ -177,31 +179,34 @@
       </section>
   </main>
 
-  <footer>
-    <section>
+  <footer class="main-footer">
+    <section class="footer-contacts">
       <p>#visitsedona<br>
         Телефон:<a href="tel:+74956660166">+7(495) 666-01-66</a>
       </p>
     </section>
-    <ul>
-      <li>
+    <ul class="social">
+      <li class="social-button">
         <a>
           <img src="img/icons/twitter.svg" width="17" height="17" alt="twitter">
       </a>
       </li>
-      <li>
+      <li class="social-button">
         <a>  <img src="img/icons/youtube.svg" width="20" height="16" alt="youtube">
         </a>
       </li>
-      <li>
+      <li class="social-button">
         <a>
           <img src="img/icons/fb-icon.svg" width="12" height="22" alt="facebook">
         </a>
       </li>
-      <p>Website by</p>
-      <a>  <img src="img/icons/logo-htmlacademy.svg" width="115" height="41" alt="logohtml">
-      </a>
-    </ul>
+      <p class="copyright">
+        <p>Website by</p>
+        <a class="copyright-button">
+            <img src="img/icons/logo-htmlacademy.svg" width="115" height="41" alt="logohtml">
+        </a>
+        </p>
+
 </footer>
 
 </body>
