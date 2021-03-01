@@ -55,10 +55,8 @@
     color: var(--color-black);
     text-transform: uppercase;
     background-color: var(--color-white);
-    background-image: url("/img/background-photo.jpg");
     background-position: top center;
 }
-
 a {
     text-decoration: none;
 }
@@ -74,6 +72,9 @@ a:hover {
 
 
 /* Main navigation */
+.base-logo{
+    background-image: url("../img/background-photo.jpg");
+}
 
 .main-navigation {
     font-size: 14px;
@@ -86,11 +87,25 @@ a:hover {
     background-color: var(--color-white);
 }
 
-.site-navigation {
+.site-navigation a {
     list-style: none;
     color: var(--color-black);
 }
+/* Search-Hotel */
+.search-hotel{
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+}
 
+/* Buttons */
+.button-details{
+    color: var(--color-white);
+    background-color: var(--color-blue);
+}
+.button-book{
+    color: var(--color-white);
+    background-color: var(--color-brown);
+}
 
 /* Features */
 
@@ -139,15 +154,13 @@ a:hover {
     list-style: none
 }
 
-.social-button {
+.social-button  {
     width: 46px;
     height: 48px;
     color: var(--color-white);
     background-color: var(--color-blue);
     background-position: center;
-    margin: 0px auto;
 }
-
 
 /* Copyright */
 
