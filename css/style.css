@@ -267,6 +267,33 @@ a, a:hover, a:active, a:focus {
   color: var(--color-black);
   font-weight: 700;
 }
+.filter-checkbox{
+  list-style: none;
+}
+.site-navigation li {
+  list-style: none;
+  width: 25%;
+  color: var(--color-black);
+}
+
+.site-navigation li:nth-child(1), .site-navigation li:nth-child(2) {
+  text-align: left;
+}
+
+.site-navigation li:nth-child(3), .site-navigation li:nth-child(4) {
+  text-align: right;
+}
+
+.main-navigation {
+  position: relative;
+}
+
+.main-header-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
 
 .site-navigation-link:hover {
   color: var(--color-blue);
